@@ -39,7 +39,7 @@ void review_matrix(Matrix<double>& matrix, mode_t out_flag){
     cout << "-------------------------------------------------------------" <<  endl;
 }
 
-int main() {
+int main(int argc, char*argv[])
     ifstream in_file("../test/matrix_in");
     int n_matrix;
     in_file >> n_matrix;
