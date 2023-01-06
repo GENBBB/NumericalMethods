@@ -18,7 +18,7 @@ private:
     unsigned Cols{};
 public:
     Matrix(unsigned rows, unsigned cols, T initial);
-    Matrix(const Matrix<T> *matrix);
+    explicit Matrix(const Matrix<T> *matrix);
     T& operator()(const unsigned& row, const unsigned& col);
     const T& operator()(const unsigned& row, const unsigned& col) const;
     [[nodiscard]] unsigned GetRows() const;
